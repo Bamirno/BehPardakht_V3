@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             var client = new BehPardakhtConnector.TCPClient("192.168.1.102", 6062);
             var response = client.Payment(10000);
             richTextBox1.Text = Newtonsoft.Json.JsonConvert.SerializeObject(response);
+
         }
     }
 }
